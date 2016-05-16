@@ -33,7 +33,7 @@
 
 				}	
 			}
-			alert(prepareGallery.innerHTML);
+		
 		}
 		function insertAfter(newElement,targetElement){
 			var parent=targetElement.parentNode;
@@ -55,7 +55,7 @@
 			  var style=document.getElementById('style');
 			insertAfter(placehoder,style);
 			insertAfter(description,placehoder);
-			alert(placehoder.innerHTML);
+		
 		}
 
 		/*function addLoadEvent(func){
