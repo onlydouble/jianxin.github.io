@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+
+	<package name="sshzh" namespace="/" extends="struts-default">
+		<!-- 注册 -->
+		<!-- <action name="regist" class="userAction" method="regist">
+		 <result 
+			name="success" type="redirectAction">list</result> </action> 查询所有 
+			<action 
+			name="list" class="userAction" method="list"> <result name="success">/list.jsp</result> 
+			</action> -->
+
+		<!-- 登录 -->
+		<action name="login" class="userAction" method="login">
+			<result name="success">/success.jsp</result>
+			<result name="input">/login.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+
+		<!-- 用户登录 -->
+		<action name="mlogin" class="com.action.EmployeeAction" method="login">
+			<result name="success">/employee/total.jsp</result>
+
+			<result name="error">/employee/index.jsp</result>
+		</action>
+		<action name="c_login" class="companyAction">
+			<result>login.jsp</result>
+		</action>
+		<!-- 用户注册 -->
+		<action name="cregist" class="employeeAction" method="regist">
+			<result name="success">/employee/index.jsp</result>
+		</action>
+		<!-- 配置 -->
+		<action name="information" class="employeeAction">
+			<result>/employee/information.jsp</result>
+		</action>
+		<action name="main" class="employeeAction">
+			<result>/employee/main.jsp</result>
+		</action>
+
+				<action name="total" class="employeeAction">
+			<result>/employee/total.jsp</result>
+		</action>
+		<action name="index" class="employeeAction">
+			<result>/employee/index.jsp</result>
+		</action>
+				<action name="c_index" class="employeeAction">
+			<result>/company/c_index.jsp</result>
+		</action>
+		<action name="login_l" class="employeeAction">
+			<result>/employee/login.jsp</result>
+		</action>	
+		<action name="c_total" class="employeeAction">
+			<result>/company/c_total.jsp</result>
+		</action>
+ 	<action name="c_main" class="employeeAction">
+			<result>/company/c_main.jsp</result>
+		</action>
+<!-- 企业的Action -->
+		<!-- 企业登录 -->
+		<action name="clogin" class="companyAction" method="login">
+			<result name="success">/company/c_total.jsp</result>
+			<result name="error">/company/c_index.jsp</result>
+		</action>
+
+		<!-- 企业注册 -->
+		<action name="companyregist" class="companyAction" method="regist">
+			<result name="success">/company/c_index.jsp</result>
+		</action>
+
+		<!-- 显示职位列表 -->
+		<action name="list" class="companyjobAction" method="list">
+			<!-- 显示申请职位 -->	
+			<result name="success">/company/c_main.jsp</result>
+			
+		</action>
+			
+		<action name="showCompany" class="applyAction" method="getApply">
+			<result name="success">/company/c_main_1.jsp</result>
+		</action>
+		
+
+		<!-- 发布职位 -->
+		<!-- <action name="addCompanyjob" class="companyjobAction" method="addCompanyjob"> 
+			<result name="success" type="redirectAction">save</result> </action> -->
+		<action name="addCompanyjob" class="companyjobAction" method="addCompanyjob">
+			<result name="success" type="redirectAction">addCompany</result>
+		</action>
+			<action name="addCompany" class="companyjobAction" method="list">
+				<result name="success">/company/c_main.jsp</result>
+			</action>
+	
+
+		
+		<!-- <action name="c_main" class="companyjobAction" method="addCompanyjob"> 
+			<result name="success">/company/c_main.jsp</result> </action> -->
+			<!-- 删除职位 -->
+		<action name="deleteCompanyjob" class="companyjobAction"
+			method="deleteCompanyjob">
+			<result name="success" type="redirectAction">deletejob</result>
+		</action>
+			<action name="deletejob" class="companyjobAction" method="list">
+				<result name="success">/company/c_main.jsp</result>
+			</action>
+		<!-- 用户查询 -->
+		<action name="cjobQuery" class="companyjobAction" method="cjobQuery">
+			<result name="success">/employee/cjob_show.jsp</result>
+		</action>
+		<!-- 企业查询 -->
+		<action name="companyQuery" class="companyAction" method="companyQuery">
+			<result name="success">/employee/company_show.jsp</result>
+		</action>
+		<!-- 申请职位 显示职位-->
+		<action name="applyCompanyjob" class="applyAction" method="applyCompanyjob">
+			<result name="success" type="redirectAction">apply</result>
+		</action>
+		<action name="apply" class="applyAction" method="getApply">
+			<result name="success">/employee/jianjie.jsp</result>
+		</action>
+<!-- 发布动态显示动态 -->
+         <action name="messageCompanyjob" class="messageAction" method="messageCompanyjob">
+			<result name="success" type="redirectAction">message_m</result>
+		</action>
+		<action name="message_m" class="messageAction" method="getMessage">
+			<result name="success">/employee/message_m.jsp</result>
+		</action>
+		
+				<action name="m" class="messageAction" method="getMessage">
+			<result name="success">/employee/list.jsp</result>
+		</action>
+		 
+	</package>
+
+</struts>

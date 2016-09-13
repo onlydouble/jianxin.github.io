@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+    
+<struts>
+	<package name="com.qmzyht.action" extends="struts-default">
+		<!-- 系统管理员的action -->
+		<action name="m_login" class="com.qmzyht.action.AdminAction" method="adminLogin">
+			<result name="success">/manage/index.jsp</result>
+			<result name="failed">/manage/login.jsp</result>
+		</action>
+		<action name="m_queryAdmin" class="com.qmzyht.action.AdminAction" method="adminQuery">
+			<result name="success">/manage/adminmgr.jsp</result>
+		</action>
+		<action name="m_queryAdminSelf" class="com.qmzyht.action.AdminAction" method="selfQuery">
+			<result name="success">/manage/selfedit.jsp</result>
+			<result name="failed">/manage/login.jsp</result>
+		</action>
+		<action name="m_addAdmin" class="com.qmzyht.action.AdminAction" method="adminAdd">
+			<result name="success">/manage/success.jsp</result>
+			<result name="failed">/manage/error.jsp</result>
+		</action>
+		<action name="m_editAdmin" class="com.qmzyht.action.AdminAction" method="adminEdit">
+			<result name="success">/manage/success.jsp</result>
+			<result name="failed">/manage/error.jsp</result>
+		</action>
+		<action name="m_editAdminSelf" class="com.qmzyht.action.AdminAction" method="adminEditSelf">
+			<result name="success">/manage/success.jsp</result>
+			<result name="failed">/manage/error.jsp</result>
+		</action>
+		<action name="m_deleteAdmin" class="com.qmzyht.action.AdminAction" method="adminDelete">
+			<result name="success">/manage/success.jsp</result>
+			<result name="failed">/manage/error.jsp</result>
+		</action>
+<!--企业 -->
+		<action name="m_queryCompany" class="com.qmzyht.action.CompanyAction" method="companyQuery">
+			<result name="success">/manage/usermgr.jsp</result>
+		</action>
+		<action name="m_editCompany" class="com.qmzyht.action.CompanyAction" method="companyEdit">
+			<result name="success">/manage/success.jsp</result>
+			<result name="failed">/manage/error.jsp</result>
+		</action>
+		<action name="m_deleteCompany" class="com.qmzyht.action.CompanyAction" method="companyDelete">
+			<result name="success">/manage/success.jsp</result>
+			<result name="failed">/manage/error.jsp</result>
+		</action>
+<!--职位 -->
+        <action name="m_queryCompanyjob" class="com.qmzyht.action.CompanyjobAction" method="companyjobQuery">
+			<result name="success">/manage/companyjobmgr.jsp</result>
+		</action>
+		<action name="m_editCompanyjob" class="com.qmzyht.action.CompanyjobAction" method="companyjobEdit">
+			<result name="success">/manage/success.jsp</result>
+			<result name="failed">/manage/error.jsp</result>
+		</action>
+		<action name="m_deleteCompanyjob" class="com.qmzyht.action.CompanyjobAction" method="companyjobDelete">
+			<result name="success">/manage/success.jsp</result>
+			<result name="failed">/manage/error.jsp</result>
+		</action>
+	
+
+<!--用户 -->
+		<action name="m_queryEmployee" class="com.qmzyht.action.EmployeeAction" method="employeeQuery">
+			<result name="success">/manage/employeemgr.jsp</result>
+		</action>
+		<action name="m_editEmployee" class="com.qmzyht.action.EmployeeAction" method="employeeEdit">
+			<result name="success">/manage/success.jsp</result>
+			<result name="failed">/manage/error.jsp</result>
+		</action>
+		<action name="m_deleteEmployee" class="com.qmzyht.action.EmployeeAction" method="employeeDelete">
+			<result name="success">/manage/success.jsp</result>
+			<result name="failed">/manage/error.jsp</result>
+		</action>
+<!--留言板 -->
+			<action name="m_queryMessage" class="com.qmzyht.action.MessageAction" method="messageQuery">
+			<result name="success">/manage/messagemgr.jsp</result>
+		</action>
+				<action name="m_deleteMessage" class="com.qmzyht.action.MessageAction" method="messageDelete">
+			<result name="success">/manage/success.jsp</result>
+			<result name="failed">/manage/error.jsp</result>
+		</action>
+<!-- 企业用户的action -->
+		<action name="e_login" class="com.qmzyht.action.UserAction" method="userLogin">
+			<result name="success">/index.jsp</result>
+			<result name="failed">/login.jsp</result>
+		</action>
+		<action name="e_queryUserSelf" class="com.qmzyht.action.UserAction" method="selfQuery">
+			<result name="success">/selfedit.jsp</result>
+			<result name="failed">/login.jsp</result>
+		</action>
+		<action name="e_editUserSelf" class="com.qmzyht.action.UserAction" method="userEditSelf">
+			<result name="success">/success.jsp</result>
+			<result name="failed">/error.jsp</result>
+		</action>
+		<action name="e_queryCMenu" class="com.qmzyht.action.CMenuAction" method="cmenuQuery">
+			<result name="success">/cmenumgr.jsp</result>
+		</action>
+		<action name="e_addMenu" class="com.qmzyht.action.CMenuAction" method="cmenuAdd">
+			<result name="success">/success.jsp</result>
+			<result name="failed">/error.jsp</result>
+		</action>
+		<action name="e_editMenu" class="com.qmzyht.action.CMenuAction" method="cmenuEdit">
+			<result name="success">/success.jsp</result>
+			<result name="failed">/error.jsp</result>
+		</action>
+		<action name="e_deleteMenu" class="com.qmzyht.action.CMenuAction" method="cmenuDelete">
+			<result name="success">/success.jsp</result>
+			<result name="failed">/error.jsp</result>
+		</action>
+		<action name="e_createMenu" class="com.qmzyht.action.CMenuAction" method="cmenuCreate">
+			<result name="success">/success.jsp</result>
+			<result name="failed">/error.jsp</result>
+		</action>
+		<action name="e_queryReslib" class="com.qmzyht.action.ReslibAction" method="reslibQuery">
+			<result name="success">/reslibmgr.jsp</result>
+		</action>
+	</package>
+	<constant name="struts.multipart.saveDir" value="/tmp"></constant>
+</struts>

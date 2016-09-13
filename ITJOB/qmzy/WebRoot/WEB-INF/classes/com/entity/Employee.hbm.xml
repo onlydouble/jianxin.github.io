@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+ 
+
+<hibernate-mapping  >
+	
+	<class name="com.entity.Employee" table="employee">
+	<id name="eid" column="eid" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="eno" column ="eno" type="string">
+		</property>
+		<property name="epassword" column ="epassword" type="string">
+		</property>
+		<property name="ename" column="ename" type="string">
+		</property>
+		<property name="esex" column="esex" type="string">
+		</property>
+		<property name="ebirth" column="ebirth" type="date">
+		</property>
+          <property name="eidnumber" column="eidnumber" type="string">
+		</property>
+          <property name="ephone" column="ephone" type="int">
+		</property>
+		 <property name="email" column="email" type="string">
+		</property>
+		<property name="eimg" column="eimg" type="string">
+		</property>
+		<set name="companyjobs" table="emcmrelation">
+		              <key>
+		              <column name="rid"></column>
+		              </key>
+		              <many-to-many class="com.entity.Companyjob" column="cjid"/>
+		              
+		</set>
+		
+<!--  <property name="eno" type="java.lang.String">
+			<column name="eno" length="32"></column>
+		</property>
+		<property name="epassword" type="java.lang.String">
+			<column name="epassword" length="10"></column>
+		</property>
+
+		<property name="ename" type="java.lang.String">
+			<column name="ename" length="20"></column>
+		</property>
+		<property name="esex" type="java.lang.String">
+			<column name="esex" length="2"></column>
+		</property>
+		<property name="ebirth" type="java.util.Date">
+			<column name="ebirth"  />
+		</property>
+          <property name="eidnumber" type="java.lang.String">
+			<column name="eidnumber"  length="18"/>
+		</property>
+          <property name="ephone" type="java.lang.Integer">
+			<column name="ephone"  length="11"/>
+		</property>
+		 <property name="email" type="java.lang.String">
+			<column name="email"  length="20"/>
+		</property>
+		<property name="eimg" type="java.lang.String">
+			<column name="eimg" length="128"></column>
+		</property>-->
+	</class>
+	
+	 
+	
+</hibernate-mapping>
+

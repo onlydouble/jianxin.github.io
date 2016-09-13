@@ -1,0 +1,189 @@
+
+#nav, #nav ul{
+margin:0;
+padding:0;
+list-style-type:none;
+list-style-position:outside;
+position:relative;
+line-height:2em;
+z-index: 10;
+}
+
+#nav a{
+display:block;
+padding:0px 5px;
+border-bottom:1px solid #999;
+border-right:2px solid #999;
+border-radius: 5%;
+color:#000;
+text-decoration:none;
+background-color:#fff;
+padding: 10px 5px 5px 13px;
+text-align: center;
+font-size: 14px;
+font-weight: bold;
+}
+
+#nav a:hover{
+background-color:#fff;
+color:#999;
+}
+
+#nav li{
+width: 240px;
+position:relative;
+padding: 5px;
+}
+
+#nav ul {
+position:absolute;
+display:none;
+width:12em;
+top:1.5em;
+}
+
+#nav li ul a{
+width:12em;
+height:auto;
+float:left;
+}
+
+#nav ul ul{
+top:auto;
+}
+#nav li ul  {
+	position: absolute;
+left:16.5em;
+top: 5%;
+
+
+}
+#nav li ul ul {
+left:11.5em;
+margin:0px 0 0 5px;
+
+}
+
+
+
+
+.center-middle-top{
+	width:600px; height: 150px; margin-top: 20%;margin-left: 5%;}
+	#info{ width:100%;height: 150px}
+
+.wrap a {display:block; width:136px; height:230px; text-decoration:none; color:#000;}
+.wrap {width:136px; height:230px; position:relative; overflow:hidden; font-family:arial, sans-serif; border:0; margin-right:  8px; float:left; display:inline; border-bottom:5px #999 solid;border-top:5px #999 solid; border-radius: 50%;}
+.wrap img {border:0;width:136px;height:230px; }
+.wrap i {display:block; width:136px; height:230px; position:absolute; left:0; top:300px; z-index:1; background:#000; filter: alpha(opacity=40);
+ filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40); opacity:0.40;
+ -webkit-transition: all 0.6s ease-in-out;
+ -moz-transition: all 0.6s ease-in-out;
+ -o-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+ }
+.wrap p {display:block; width:136px; height:230px; position:absolute; left:0; top:300px; z-index:1; background:transparent; font-size:12px; color:#fff; padding:0; margin:0; line-height:16px;
+-webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+.wrap p b {display:block; font-size:20px; color:#999; text-align:center; margin:0; padding:0; line-height:30px;}
+.wrap p span {display:block; padding:10px; line-height:20px; text-align: center;font-size: 14px;}
+.wrap a:hover {direction:ltr;}
+.wrap a:hover i {top:50%;}
+.wrap a:hover p {top:35%;}
+.center-middle-img-bottom{ height: 30px; width: 570px; background-color: #aac2f4;position: absolute;top:370px;margin-left: 10px;text-align: center;line-height: 30px;color:#fff;
+	font-weight: bold; }
+	/*                   youce*/
+	.center-right{
+		width: 20%;
+height: 500px;
+z-index: 5;
+right: 0%;
+float:right;
+position: absolute;
+background-color: #d9d9d9;
+	}
+	.hello-word{
+		text-align: center;
+	}
+	.head-box{
+		text-align: center;
+	}
+	.sentence{
+		line-height: 15px;
+
+	}
+	.operate{
+		margin-top: 20px;
+	}
+	.center-right-btn{
+		font-size: 14px;
+		text-decoration: none;
+		padding: 5px 3px;
+		margin-right: -1px;
+		background-image: url(../images/nav.gif);
+
+	}
+	ul.scrollline{height:90px;}
+
+	.center-right-center{
+		border:2px solid #999;
+		width:243px;
+		position:absolute;
+		top: 33%;
+		height: 58%;
+		font-size: 16px;
+	padding-bottom:10px;
+	}
+	li{
+		list-style-type: none;
+	}
+.center-right-titleGrey{
+position:absolute;
+width: 240px;
+ height: 60px;
+		background: url(../images/navbar.gif) repeat-x;
+		padding-left: 10px;
+		color: #fff;
+
+}
+.center-right-titleGrey h3{
+margin-top: 0%;
+}
+.center-righte-center-box{
+font-size: 14px;
+margin-left: 6px;
+
+margin-right: 5px;
+
+}
+.center-righte-center-box li{
+padding: 2px 0;
+}
+.center-righte-center-box li a{
+text-decoration: none;
+color: #999;
+}
+.center-righte-center-box li a:hover{
+text-decoration: none;
+color: #000;
+background:url(../images/nav.gif) repeat-x;
+padding: 5px;
+}
+	.center-right-bottom{
+		border:2px solid #999;
+		width:243px;
+		position:absolute;
+		top: 86%;
+		height: 60%;
+	}
+	.interactPic{
+margin-top: 12%;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 244px;
+}

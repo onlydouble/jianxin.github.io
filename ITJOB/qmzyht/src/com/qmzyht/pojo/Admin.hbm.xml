@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">  
+<hibernate-mapping>  
+	<class name="com.qmzyht.pojo.Admin" table="admin">
+		<id name="id" type="java.lang.Integer">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>
+		<property name="username" type="java.lang.String">
+			<column name="USERNAME" length="16"></column>
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="PASSWORD" length="16"></column>
+		</property>
+		<property name="state" type="java.lang.Integer">
+			<column name="STATE" />
+		</property>
+		<property name="regdate" type="java.util.Date">
+			<column name="REGDATE" length="10" />
+		</property>
+	</class>
+</hibernate-mapping>

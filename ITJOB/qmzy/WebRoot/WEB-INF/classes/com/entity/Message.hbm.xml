@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+ 
+
+<hibernate-mapping  >
+	
+	<class name="com.entity.Message" table="message">
+	<id name="id" column="id" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="meno" column ="meno" type="string">
+		</property>
+		<property name="memail" column ="memail" type="string">
+		</property>
+		<property name="medate" column="medate" type="date">
+		</property>
+		<property name="mecontent" column="mecontent" type="string">
+		</property>
+		<property name="mphone" column="mphone" type="string">
+		</property>
+		<property name="mimg" column="mimg" type="string">
+		</property>
+          </class>
+</hibernate-mapping>
+

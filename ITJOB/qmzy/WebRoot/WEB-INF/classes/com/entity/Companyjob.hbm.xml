@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-6-13 9:13:20 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.entity">
+     <class name="Companyjob" table="companyjob" >
+        <id name="cjid" column="cjid" type="int" >
+            <generator class="increment" />
+        </id>
+        
+        <property name="cjob" column="cjob" type="string">
+        </property>
+         <property name="csalary" column="csalary" type="string">
+        </property>
+         <property name="crequest" column="crequest" type="string">
+        </property>
+                 <property name="cjaddress" column="cjaddress" type="string">
+        </property>
+                         <property name="credate" column="credate" type="date">
+        </property>
+        <many-to-one name="company" class="Company" column="cid"/>
+        
+            </class> 
+</hibernate-mapping>
+         

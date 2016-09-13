@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//WebRoot/company/c_main.jsp=UTF-8
+encoding//WebRoot/company/c_main_1.jsp=UTF-8
+encoding//WebRoot/employee/information.jsp=UTF-8
+encoding//WebRoot/employee/jian.jsp=UTF-8
+encoding//WebRoot/employee/login.jsp=UTF-8
+encoding//WebRoot/employee/message_m.jsp=UTF-8
+encoding//src/com/action/EmployeeAction.java=UTF-8
+encoding//src/com/dao/EmployeeDao.java=UTF-8
+encoding//src/com/test/EmployeeDao.java=UTF-8

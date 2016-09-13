@@ -1,0 +1,331 @@
+*{
+	margin: 0;padding: 0;
+}
+body {
+    font: 14px/200% "微软雅黑","MSYH","宋体",STSONG,Arial, Helvetica, sans-serif;
+}
+
+.top{
+	width: 100%;
+	height: 35px;
+	min-width: 1003px !important;
+	background: #a4c2f4;
+	border-bottom: 1px solid #dadada;
+	 border: 1px solid rgb(174, 226, 217);
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -o-border-radius: 10%;
+    border-radius: 10%;
+    box-shadow: -8px -8px 20px #efefef, 5px 5px 5px #B9B9B9;
+
+}
+div{
+	display: block;
+
+}
+.W1003 a{
+
+	border-radius: 20%;
+	border:2px solid #e2e2e2;
+
+}
+.W1003 a:hover{
+	background: -webkit-linear-gradient(to left, #999 , #fff); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #999 , #fff);
+	    -webkit-border-radius: 10%;
+	    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 20%;
+    box-shadow: -8px -8px 8px #999, 10px 10px 10px #B9B9B9;
+
+
+}
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+
+
+}
+.top .W1003 {
+    height: 40px;
+    line-height: 40px;
+    width: 1003px;
+    margin: 0 auto;
+}
+.fl{
+	float: left;
+}
+.fl .saoma a{
+	display: block;
+
+	padding-left: 20px;
+	margin-left: 100px;
+
+}
+.fr{
+	float: right;
+
+}
+.logo{
+	position: absolute;
+	left: 12%;
+	top: 30%;
+}
+.Reglogin ul li {
+   float: left;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    margin-top: -39px;
+     color: #999;
+	font-weight: bold;
+}
+ul, li {
+    list-style-type: none;
+
+}
+.search-section{
+	height: 50px;width: 100%;position: relative;
+}
+.headsearch{
+	position: absolute;
+	margin-top:4%;
+	right: 10%;
+}
+.search-text{
+	background:#cfe2f3;
+	border-radius: 8%;
+	height: 32px;
+	border:2px solid  #999; width: 350px;
+	 box-shadow: -5px -5px 20px #fff, 10px 10px 10px #B9B9B9;
+}
+.search-btn{
+	background:#cfe2f3;
+	width: 80px;
+	height: 32px;
+	margin-left: -6px;
+	border-radius: 10%;
+	 box-shadow: -5px -5px 20px #fff, 10px 10px 10px #B9B9B9;
+}
+.hot-words{
+	position: absolute;
+	top: 3px;
+	right: 90px;
+}
+.hot-words a:hover{
+	text-decoration: none;
+}
+
+
+
+div nav {
+	position: absolute;
+
+   height: 35px;
+   width: 100%;
+    background-color: rgb(119, 136, 153);
+    border-color: rgb(174, 205, 248);
+    border-radius: 5%;
+    z-index: 1;
+}
+nav {
+    background-image: url(../images/nav.gif);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    border-width: 0.1em;
+
+    border-bottom-width: 0;
+    border-top-width: 0;
+    padding-left: 10%;
+}
+ nav ul {
+    width: 100%;
+    overflow: hidden;
+    border-left-width: 0.1em;
+
+    padding-top: 0;
+}
+
+ nav a.here:link, nav a.here:visited, nav a.here:hover,  nav a.here:active {
+  /*   color: rgb(238, 238, 255);
+    background-color: rgb(119, 153, 153)} */}
+ nav ul  li{
+             display: inline-block;
+    }
+    nav ul li a{
+    	 color: #fff;
+    	font-weight: bold;
+    	padding: 0.5em 2em;
+	border-right: 0.1em solid;
+	line-height: 35px;
+    }
+
+    div .middle{
+       position: absolute;
+      margin-top: 9%;
+   width: 90%;
+   margin-left: 5%;
+   height: 500px;
+   background-color:#c9daf8;
+
+    }
+
+    .fourpage .border{
+    	margin-left: 8%;
+    	margin-top: 5%;
+    	height: 400px;
+    }
+
+		 .border-indicators{
+		     position: absolute;
+		     z-index: 10;
+		     left:64%;
+		     top: 112%;
+		 }
+
+
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+
+    background-repeat: repeat-x;}
+    .carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+
+    background-repeat: repeat-x;
+}
+.carousel-control .glyphicon-chevron-left {
+    left: 50%;
+ /*   margin-left: -10px;*/
+}
+.carousel-control .glyphicon-chevron-right {
+	position: absolute;
+           right: 8%;
+             z-index: 10;
+   /* margin-right: -10px;*/
+}
+.item{
+	margin-left:7%;
+	margin-top: 12%;
+
+}
+.carousel-inner {
+
+    width:100%;
+    overflow: hidden;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
+  width: 0px;
+  height: 100px;
+
+    font-size: 0px;
+
+border:10px solid #999;
+    -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+ .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+   width: 0px;
+    height: 100px;
+
+    font-size: 0px;
+
+border:10px solid #999;
+    -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+ }
+
+.carousel-indicators{
+position: absolute;
+	top: -10%;
+	left:65%;
+}
+
+ div .middle_2{
+ 	position: absolute;
+ 	height: 480px;
+ 	width:28%;
+ 	background:#b09999;
+ 	opacity:0.6;
+
+ 	right: 14%;
+ 	margin-top: 10%;
+
+
+ 	padding: 30px 10px;
+ 	background:rgba(255, 255, 255, 0.6)!important;
+ 	filter:Alpha(opacity=60); background:#fff;
+ }
+ .col-lg-6{
+	 margin-top: 5%;
+
+ }
+.form-horizontal{
+	margin-top: 20%;
+
+}
+.text{
+
+}
+.middle_2 a:hover{
+	text-decoration: none;
+	color: #a4c2f4;
+	background:#fff ;
+}
+.form-group{
+	padding-top: 3%;
+
+}
+.checkbox{
+	margin-left: 11%;
+}
+.btn{
+	border:1px solid #999;
+  box-shadow: -8px -8px 20px #efefef, 5px 5px 5px #B9B9B9,5px 5px 5px #efefef,5px 5px 5px #B9B9B9;
+	    border-radius:10%;
+			margin-left: 5%;
+			margin-right: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ div .left。。{
+               float: left;
+               width: 18%;
+               background-color: #000;
+               height: 500px;
+ }
+ div .center。。{
+                 float: left;
+                 width: 60%;
+                 margin-left: 2%;
+                    background-color: #000;
+                   height: 500px;
+ }
+ div .right。。{
+                float: right;
+                width: 18%;
+                   background-color: #000;
+                   height: 500px;
+ }

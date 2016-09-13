@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.entity.User" table="user">
+		<id name="id" column="uid">
+			<generator class="native" />
+		</id>
+		<property name="name" column="uname" type="string"/>
+		<property name="password" column="upassword" type="string"/>
+		<property name="age" column="uage" type="int"/>
+		<property name="sex" column="usex" type="string"/>
+		<property name="birth" column="ubirth" type="date"/>
+		
+	</class>
+</hibernate-mapping>

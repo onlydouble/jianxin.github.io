@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-6-13 9:13:20 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.qmzyht.pojo.Company" table="company" >
+        <id name="cid" column="cid" type="int" >
+            <generator class="increment" />
+        </id>
+        <property name="cname" column="cname" type="string">
+        </property>
+        <property name="cpassword" column="cpassword"  type="string">
+        </property>
+ 
+        <property name="caddress" column="caddress" type="string">
+        </property>
+        <property name="clink" column="clink" type="string">
+        </property>
+        <property name="cphone" column="cphone" type="string">
+        </property>
+        <property name="cemail" column="cemail" type="string">
+        </property>
+        <property name="cimg" column="cimg" type="string">
+        </property>
+                <property name="content" column="content" type="string">
+        </property>
+    </class>
+</hibernate-mapping>
+
+         
