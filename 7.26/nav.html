@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+li,ul{
+	text-decoration: none;
+	list-style-type: none;
+}
+	</style>
+
+</head>
+<body>
+	<div class="box">
+		<ul class="menu">
+			<li class="level1">
+				<a href="#none">衬衫</a>
+				<ul class="level2">
+					<li><a href="#none">短袖衬衫</a></li>
+					<li><a href="#none">短袖衬衫</a></li>
+					<li><a href="#none">短袖衬衫</a></li>
+					<li><a href="#none">短袖衬衫</a></li>
+				</ul>
+			</li>
+			<li class="level1">
+				<a href="#none">卫衣</a>
+				<ul class="level2">
+					<li><a href="#none">短袖卫衣</a></li>
+					<li><a href="#none">短袖卫衣</a></li>
+					<li><a href="#none">短袖卫衣</a></li>
+					<li><a href="#none">短袖卫衣</a></li>
+				</ul>
+			</li>
+			<li class="level1">
+				<a href="#none">裤子</a>
+				<ul class="level2">
+					<li><a href="#none">短袖裤子</a></li>
+					<li><a href="#none">短袖裤子</a></li>
+					<li><a href="#none">短袖裤子</a></li>
+					<li><a href="#none">短袖裤子</a></li>
+				</ul>
+			</li>			
+		</ul>
+	</div>
+	<script type="text/javascript">
+		$(".level1>a").click(function() {
+			/* Act on the event */
+			$(this).addClass('current').next().show().parent().siblings().children('a').removeClass('current').next().hide();
+			return false;
+		});
+
+	</script>
+</body>
+</html>

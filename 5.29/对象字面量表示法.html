@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>对象表示法实例</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function displaytInt(args) {
+			var output = "";
+			if (typeof args.name == "string") {
+				output +="Name:" + args.name + "\n";
+			}
+			if (typeof args.age == "number") {
+				output +="Age:" + args.age + "\n";
+			}
+			alert(output);
+		}
+		displaytInt({name:"navigation",age:29});
+		displaytInt({name:"navi"});
+	</script>
+</body>
+</html>

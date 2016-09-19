@@ -1,0 +1,180 @@
+.clearfix:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.clearfix {
+    zoom:1; /* for IE6 IE7 */
+}
+.center-middle-top{
+        position: relative;
+    /*background: url("../images/bg.png") no-repeat;*/
+    background-size: cover;
+    padding-bottom: 20px;
+    min-height: 549px;
+}
+.center-middle-top-img{
+     width: 960px;
+    margin: 0 auto;
+}
+.center-middle-top-img-box{
+      float: left;
+    position: relative;
+    width: 527px;
+    height: 383px;
+    margin-top: 83px;
+}
+
+
+.swiper-container {
+    height: 458px;
+    width: 560px;
+}
+.swiper-slide{
+    position: relative;
+    
+}
+.swiper-slide img{
+    position: absolute;
+}
+.swiper-slide img:hover{
+    cursor:pointer
+}
+.one-1{
+    top: 0px;
+    left: 0px;
+
+}
+.one-2{
+    top: 0px;
+    left: 140px;
+}
+.one-3{
+    top: 115px;
+    left: 0px;
+}
+.one-4{
+    top: 0px;
+    left: 281px;
+}
+.one-5{
+    top: 0px;
+    left: 421px;
+}
+.one-6{
+    top: 116px;
+    left: 421px;
+}
+.one-7 {
+    top: 231px;
+    left: 0px;
+}
+.one-8{
+    top: 230px;
+    left: 141px;
+}
+.one-9{
+    top: 230px;
+    left: 422px;
+}
+.one-10{
+top: 346px;
+    left: 141px;
+}
+.one-11{
+top: 346px;
+    left: 282px;
+}
+.two_1{
+    top: 0px;
+    left: 0px;
+
+}
+.two_2{
+    top: 0px;
+    left: 281px;
+}
+.two_3{
+    top: 116px;
+    left: 1px;
+}
+.two_4{
+    top: 116px;
+    left: 282px;
+}
+.two_5{
+    top: 231px;
+    left: 1px;
+}
+.two_6{
+    top: 231px;
+    left: 141px;
+}
+.two_7{
+    top: 231px;
+    left: 282px;
+}
+.two_8{
+    top: 231px;
+    left: 423px;
+}
+.two_9{
+    top: 345px;
+    left: 0px;
+}
+.two_10{
+    top: 346px;
+    left: 141px;
+}
+.two_11 {
+    top: 348px;
+    left: 283px;
+}
+.three-1{
+    top: 1px;
+    left: 1px;
+
+}
+.three-2{
+    top: 1px;
+    left: 142px;
+}
+.three-3{
+    top: 0px;
+    left: 286px;
+}
+.three-4 {
+    top: -1px;
+    left: 424px;
+}
+.three-5{
+    top: 116px;
+    left: 286px;
+}
+.three-6{
+    top: 229px;
+    left: 1px;
+}
+.three-7{
+    top: 230px;
+    left: 286px;
+}
+.three-8{
+    top: 231px;
+    left: 427px;
+}
+.three-9{
+    top: 350px;
+    left: 2px;
+}
+.three-10{
+    top: 349px;
+    left: 284px;
+}
+.three-11{
+    top: 349px;
+    left: 426px;
+}

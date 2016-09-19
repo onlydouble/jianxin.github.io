@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+	for (var propName in window){
+		document.write(propName);
+	
+	}
+	//
+	var i=0;
+	do{
+		i +=2;
+	}while (i<10);
+	alert(i);
+	//
+	 var j=0;
+	 while(i<10){
+	 	i +=2;
+	 }
+	 alert(j);
+	 //
+	alert(parseInt("070",8));//以八进制解析
+             //
+	var message = "Hello World";
+	if(message){
+		alert('Value is true');
+	}
+	//
+	var result = Number.MIN_VALUE + Number.MAX_VALUE;
+	alert(isFinite(result));//flase;
+	//
+	alert(isNaN(NaN));//true
+	alert(isNaN(10));//flase(10是一个数值)
+	alert(isNaN("10"));//flase(可以转换为数值10)
+	alert(isNaN(true));//flase(可以转换为1)
+	alert(isNaN("blue"));//true(不可以转换为数值)
+
+
+</script>
+</html>

@@ -1,0 +1,32 @@
+
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>选项卡（tabs）</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- 选项卡组件（菜单项nav-tabs）-->
+<ul id="mytab" class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#bulletin" role="tab" data-toggle="tab">公告</a></li>
+    <li><a href="#rule" role="tab" data-toggle="tab">规则</a></li>
+    <li><a href="#forum" role="tab" data-toggle="tab">论坛</a></li>
+	<li><a href="#security" role="tab" data-toggle="tab">安全</a></li>
+	<li><a href="#welfare" role="tab" data-toggle="tab">公益</a></li>
+</ul>
+<!-- 选项卡面板 -->
+<div id="mytabcontent" class="tab-content">
+	<div class="tab-pane active" id="bulletin">公告内容面板</div>
+	<div class="tab-pane" id="rule">规则内容面板</div>
+	<div class="tab-pane" id="forum">论坛内容面板</div>
+	<div class="tab-pane" id="security">安全内容面板</div>
+	<div class="tab-pane" id="welfare">公益内容面板</div>
+</div>
+ 
+ 
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+</body>
+</html>

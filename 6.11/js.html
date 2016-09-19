@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function arraysSimilar(x,y) {
+			if(!(x instanceof Array) || !(y instanceof Array)){
+				return false;
+			}
+			if(x.length!==y.length){
+				return false;
+			}
+                                       var  count1 = {},
+                                           count2 = {},
+                                           t1,t2,
+                                      type = ['String','boolean','function','data','window','number','null','undefined'];
+
+                                           for(var i = 0;i<x.length;i++){
+                                           	t1 = typeOf(x[i]);
+                                           	t2 = typeOf(y[i]);
+                                           	if(count1[t1]){
+                                           		count1[t1]++;
+                                           	}else{
+                                           		count1[t1] = 1;
+                                           	}
+				if(count2[t2]){
+                                           		count2[t2]++;
+                                           	}else{
+                                           		count2[t2] = 1;
+                                           	}
+                                           }
+                                     function typeOf(ele){
+                                     	var r;
+                                     	if (ele ===null) r = 'null';
+                                          else if(ele instanceof Array) r = 'Array';
+                                          else if(ele == window) r='window';
+                                          else if(ele instanceof data) r= 'data';
+                                          else r= typeof ele;
+                                          return r;
+                                     }
+                                     for(var i = 0;i<type.length;i++){
+                                     	if(count1[type[i]] !==count2[type[i]]){
+                                     		return false;
+                                     	}
+                                     }
+                                     return true;
+}
+
+//
+var result = function(){
+			var cases = [{
+				x:[1,true,null],
+				y:[null,false,100],
+				expect:true
+			},{
+				x:[function(){},100],
+				y:[100,{}],
+				expect:false
+			},{
+				x:[null,999],
+				y:[{},444],
+				expect:false
+			},{
+				x:[(function(){}),"hahaha",undefined,true,1,window,new data()],
+				y:[undefined,(function(){}),"okokok",new data(),false,2,window],
+				expect:true
+			},{
+				x:[new data()],
+				y:[{}],
+				expect:false
+			},{
+				x:[window],
+				y:[{}],
+				expect:false
+			},{
+				x:[new Object,new Object,new Object],
+				y:[{},{},null],
+				expect:false
+			},{
+				x:[],
+				y:undefined,
+				expect:false
+			},{
+				x:"abc",
+				y:"cba",
+				expect:false
+			}];
+			for(var i= 0;i<cases[i].length;i++){
+				if(arraysSimilar(cases[i].x,cases[i].y) !=cases[i].expect){
+					document.write("不通过!case"+(i+1)+"不正确！x ="+json.stringify(cases[i].x)+
+						",y = " + json.stringify(cases[i].y)+"的判断结果不是" + cases[i].expect );
+					return false;
+				}
+			}
+			return true;
+		}();
+		document.write("判定结果："+(result?"通过":"不通过"));
+	</script>
+</body>
+</html>
